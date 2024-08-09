@@ -19,4 +19,3 @@ contact = Fields("John",
                  "Family",
                  "Baker street 1337",
                  "June 11, 2001")
-

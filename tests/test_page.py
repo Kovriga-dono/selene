@@ -59,4 +59,3 @@ elif os.name == 'mac':
         pages.main_page.filling_category()
         pages.main_page.filling_birthday()
         pages.main_page.filling_addres()
-

@@ -8,4 +8,3 @@ class Fields:
     category: str
     address: str
     birthday: str
-
