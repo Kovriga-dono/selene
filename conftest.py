@@ -20,3 +20,4 @@ def browser_f():
 @pytest.fixture()
 def browser_s():
     config.browser_name = 'safari'
+
