@@ -1,4 +1,4 @@
-from selene.api import *
+from selene import config
 import pytest
 
 
