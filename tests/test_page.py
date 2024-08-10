@@ -1,7 +1,6 @@
 import pages.main_page
 from conftest import browser_c, browser_f
 import allure
-import os
 
 
 # тесты для Chrome и FireFox будут запускаться для Winows, MacOS и Linux
