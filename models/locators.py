@@ -1,5 +1,3 @@
-from models.contact import Fields
-
 # счетчик контактов
 counter_selector = '//div[@dir="ltr"]'
 
@@ -12,10 +10,3 @@ category_selector = '//div[@class="middleCenterInner"]/div/table/tbody/tr[4]/td[
 category_selector_next = '//div[@class="middleCenterInner"]/div/table/tbody/tr[4]/td[2]/select/option[2]'
 birthday_selector = '//div[@class="middleCenterInner"]/div/table/tbody/tr[5]/td[2]/input'
 addres_selector = '//div[@class="middleCenterInner"]/div/table/tbody/tr[6]/td[2]/textarea'
-
-
-contact = Fields("John",
-                 "Doe",
-                 "Family",
-                 "Baker street 1337",
-                 "June 11, 2001")
