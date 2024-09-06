@@ -1,4 +1,6 @@
-from selene.api import s, browser
+from selene.support.shared.jquery_style import s
+from selene.support.shared import browser
+from selene import query
 import re
 import models.locators
 import models.data
@@ -31,15 +33,15 @@ def filling_birthday():
 def filling_addres():
     with allure.step('filling addres'):
         # берем оригинальное значение счетчика
-        c = re.search(r'\d+$', s(models.locators.counter_selector).text).group()
+        c = re.search(r'\d+$', s(models.locators.counter_selector).get(query.text)).group()
         s(models.locators.addres_selector).set(models.data.contact.address)
         s(models.locators.button_selector).click()
         # берём счетчик после создания контакта
-        b = re.search(r'\d+$', s(models.locators.counter_selector).text).group()
+        b = re.search(r'\d+$', s(models.locators.counter_selector).get(query.text)).group()
     # сравниваем счетчик до и после создания контакта
     assert int(b) == int(c) + 1
 
 
 def open_browser():
     with allure.step('open page'):
-        browser.open_url('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')
+        browser.open('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')

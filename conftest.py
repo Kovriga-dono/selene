@@ -1,15 +1,16 @@
-from selene import config
-from selene.browser import driver
+from selene.support.shared import browser
 import pytest
 
 
 @pytest.fixture()
 def browser_c():
-    config.browser_name = 'chrome'
-    driver().set_window_size(1024, 768)
+    browser.config.browser_name = 'chrome'
+    browser.config.window_width = 1024
+    browser.config.window_height = 768
 
 
 @pytest.fixture()
 def browser_f():
-    config.browser_name = 'firefox'
-    driver().set_window_size(1024, 768)
+    browser.browser_name = 'firefox'
+    browser.config.window_width = 1024
+    browser.config.window_height = 768
