@@ -1,6 +1,4 @@
-from selene.support.shared.jquery_style import s
-from selene.support.shared import browser
-from selene import query
+from selene.api import *
 import re
 from models import locators, data
 import allure
