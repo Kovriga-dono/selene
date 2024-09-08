@@ -44,3 +44,7 @@ def filling_addres():
 def open_browser():
     with allure.step('open page'):
         browser.open('https://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCellList')
+
+
+def end_test():
+    browser.quit()

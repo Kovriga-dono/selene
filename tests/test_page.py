@@ -15,6 +15,7 @@ def test_fill_contact(browser_c):
     pages.main_page.filling_category()
     pages.main_page.filling_birthday()
     pages.main_page.filling_addres()
+    pages.main_page.end_test()
 
 
 # запускает тест для браузера FireFox
@@ -28,3 +29,4 @@ def test_fill_contact_f(browser_f):
     pages.main_page.filling_category()
     pages.main_page.filling_birthday()
     pages.main_page.filling_addres()
+    pages.main_page.end_test()
