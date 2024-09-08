@@ -47,4 +47,5 @@ def open_browser():
 
 
 def end_test():
-    browser.quit()
+    with allure.step('browser closed'):
+        browser.quit()
