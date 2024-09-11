@@ -3,8 +3,8 @@ from conftest import browser_c, browser_f
 import allure
 
 
-# тесты для Chrome и FireFox будут запускаться для Winows, MacOS и Linux
-# запускает тест для браузера Chome
+# тесты для Chrome и FireFox будут запускаться для Windows, MacOS и Linux
+# запускает тест для браузера Chrome
 @allure.feature('autotest example')
 @allure.story('filling Chrome')
 def test_fill_contact(browser_c):
